@@ -46,6 +46,59 @@ export interface OfficerPerformance {
   performanceScore: number;
 }
 
+export interface AiQueryResponse {
+  id: string;
+  query: string;
+  response: string;
+  timestamp: string;
+  category: string;
+}
+
+export const AI_QUERY_RESPONSES: AiQueryResponse[] = [
+  {
+    id: 'Q-001',
+    query: 'Which districts are underperforming?',
+    response: 'Imphal East (score: 72.8) and Vidisha Central (68.4) are the lowest-ranked districts. Key issues: delayed projects (14 and 9 respectively) and fund utilization below 65%. Immediate attention recommended on pending file clearance — Vidisha has 38 pending files, the highest in the state.',
+    timestamp: '2026-06-16 14:30',
+    category: 'Districts',
+  },
+  {
+    id: 'Q-002',
+    query: 'Show me critical projects',
+    response: '1 project flagged Critical: CM Primary Health Center Upgrades (PRJ-2045) at only 38.7% progress against a ₹310 Cr budget, behind schedule with a Mar 2027 deadline. Additionally, District Ring Road Bypass DL-40 (PRJ-0982) is Delayed at 59.1% — held up by forest clearance. Recommend expediting both.',
+    timestamp: '2026-06-16 13:15',
+    category: 'Projects',
+  },
+  {
+    id: 'Q-003',
+    query: 'What is the fund utilization status?',
+    response: 'Overall state fund utilization stands at 82.4%, up 3.2% vs Q1. Total allocated: ₹3,010 Cr, spent: ₹2,105 Cr. Digital Governance leads at 96.6%, while Health & Welfare is critically low at 38.7%. Irrigation is on track at 75.2%. Recommend reviewing Health allocation bottlenecks.',
+    timestamp: '2026-06-16 11:45',
+    category: 'Funds',
+  },
+  {
+    id: 'Q-004',
+    query: 'Who are the top performing officers?',
+    response: 'Dr. Ramesh Iyer, IAS (Pune West) leads with a 97.5% performance score — 342 files resolved at an average of 3.4 days. Ms. Priya Sharma, IAS (Gautam Buddha Nagar) follows at 94.0% with 298 files resolved. Both maintain sub-5 day resolution averages, well above the state benchmark.',
+    timestamp: '2026-06-16 10:20',
+    category: 'Officers',
+  },
+  {
+    id: 'Q-005',
+    query: 'Any audit exceptions or compliance issues?',
+    response: '1 active exception flagged: Forest Clearance SLA breach — 3 highway projects failed to submit environmental reports on time (AUD-02). All other protocols passed (98.2% audit score). Financial, Security, and Operational audits are clear. Pending: Irrigation sub-contractor invoice verification for Narmada grid Phase 4.',
+    timestamp: '2026-06-16 09:05',
+    category: 'Audits',
+  },
+  {
+    id: 'Q-006',
+    query: 'What are the current alerts?',
+    response: '6 critical alerts active. Top priority: (1) District Ring Road Bypass flagged for missing forest clearance deadline — automated delay alert triggered. (2) Unusual transaction pattern detected in Rural Education fund DL-40 — AI Auditor Core flagged for review. (3) Inter-departmental pipeline easement dispute in District SK_2 pending resolution.',
+    timestamp: '2026-06-15 16:00',
+    category: 'Alerts',
+  },
+];
+
 export interface ActionLog {
   id: string;
   timestamp: string;

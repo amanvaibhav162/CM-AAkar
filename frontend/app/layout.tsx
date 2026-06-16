@@ -30,15 +30,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-slate-50 text-slate-900 flex">
-        {/* Left Sidebar */}
         <Sidebar />
-
-        {/* Right Content Area */}
         <div className="flex-grow flex flex-col min-w-0 h-screen overflow-hidden">
-          {/* Header */}
           <Header />
-
-          {/* Scrollable Page Body */}
           <main className="flex-1 overflow-y-auto">
             {children}
           </main>

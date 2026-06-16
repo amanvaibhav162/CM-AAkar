@@ -3,15 +3,6 @@ import { ShieldCheck, Info, Cpu, Network } from "lucide-react";
 export default function AboutPage() {
   return (
     <div className="p-6 lg:p-8 space-y-6 max-w-[1200px] mx-auto">
-      <div className="flex flex-col gap-1 border-b border-slate-200 pb-5 mb-4">
-        <h2 className="text-xl font-bold text-slate-800 uppercase tracking-tight">
-          About AAKAR Portal
-        </h2>
-        <p className="text-xs text-slate-500 font-medium">
-          System summary, cryptographic specs, and developer information for the CM Governance Core.
-        </p>
-      </div>
-
       <div className="bg-white border border-slate-200 rounded p-6 shadow-xs max-w-3xl space-y-6">
         <div className="flex items-center gap-3">
           <div className="p-2.5 bg-gov-gold-50 rounded-full border border-gov-gold-100">

@@ -3,15 +3,6 @@ import DistrictRankings from "@/components/DistrictRankings";
 export default function DistrictsPage() {
   return (
     <div className="p-6 lg:p-8 space-y-6 max-w-[1200px] mx-auto">
-      <div className="flex flex-col gap-1 border-b border-slate-200 pb-5 mb-4">
-        <h2 className="text-xl font-bold text-slate-800 uppercase tracking-tight">
-          District Governance Overview
-        </h2>
-        <p className="text-xs text-slate-500 font-medium">
-          Comprehensive performance evaluation rankings for all 38 administration sectors.
-        </p>
-      </div>
-
       <div className="bg-white rounded border border-slate-200 shadow-2xs">
         <DistrictRankings />
       </div>

@@ -19,15 +19,6 @@ const AUDIT_RULES: AuditRule[] = [
 export default function AuditsPage() {
   return (
     <div className="p-6 lg:p-8 space-y-6 max-w-[1200px] mx-auto">
-      <div className="flex flex-col gap-1 border-b border-slate-200 pb-5 mb-4">
-        <h2 className="text-xl font-bold text-slate-800 uppercase tracking-tight">
-          Compliance & Audits
-        </h2>
-        <p className="text-xs text-slate-500 font-medium">
-          Systematic validation of administrative transactions, security keys, and regulatory protocols.
-        </p>
-      </div>
-
       {/* KPI stats */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         <div className="bg-white border border-slate-200 rounded p-5 flex items-center justify-between shadow-2xs">

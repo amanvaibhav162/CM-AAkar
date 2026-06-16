@@ -30,6 +30,8 @@ export default function Header() {
         return "System Settings";
       case "/about":
         return "About AAKAR Portal";
+      case "/ask-ai":
+        return "Ask AI";
       default:
         return "Command Center";
     }

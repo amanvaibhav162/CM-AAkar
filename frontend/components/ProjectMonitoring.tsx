@@ -36,7 +36,7 @@ export default function ProjectMonitoring() {
               const isCritical = project.status === "Critical";
               const isDelayed = project.status === "Delayed";
 
-              let statusBadge = "bg-green-50 text-green-700 border-green-200";
+              let statusBadge = "bg-emerald-50 text-emerald-700 border-emerald-200";
               let StatusIcon = CheckCircle;
               if (isCritical) {
                 statusBadge = "bg-red-50 text-red-700 border-red-200";
